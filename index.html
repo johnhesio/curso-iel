@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Javascript</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <input type="text" id="busca" placeholder="Pesquisar por titulo" />
+    </header>
+    <main>
+      <section id="tarefas">
+        <h2>Tarefas <button>nova tarefa</button></h2>
+        <h6>Nenhuma Tarefa registrada</h6>
+      </section>
+      <section id="overlay"></section>
+      <div class="modal">
+        <form>
+          <h3>Criar Tarefa</h3>
+          <label for="titulo">Titulo</label>
+          <input type="text" id="titulo" />
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao"></textarea>
+          <button>Criar</button>
+        </form>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
 </html>

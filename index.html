@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <input type="text" id="busca" placeholder="Pesquisar por titulo" />
+      <input type="text" id="busca" onkeyup="pesquisarTarefa()" placeholder="Pesquisar por descrição" />
     </header>
     <main>
       <section id="tarefas">
@@ -18,13 +18,13 @@
       </section>
       <section id="overlay" onclick="fecharModal()"></section>
       <div id="criarTarefa" class="modal">
-        <form onsubmit="novaTarefa()" >
+        <form onsubmit="novaTarefa()">
           <h3>
             Criar Tarefa
             <box-icon name="x" size="md" onclick="fecharModal()"></box-icon>
           </h3>
           <label for="titulo">Titulo</label>
-          <input type="text" id="titulo" required/>
+          <input type="text" id="titulo" required />
           <label for="descricao">Descrição</label>
           <textarea id="descricao" required></textarea>
           <button>Criar</button>
